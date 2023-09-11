@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navBar{
+    display: flex;
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    /* margin-top: 100px; */
+    
+}
+.navBarFirst{
+    display: flex;
+    list-style-type: none;
+    background-color:rgb(0, 0, 0);
+    width: 70%;
+    text-align: center;
+    padding-top: 15px;
+}
+.navBarFirst li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.a100px{
+    margin-left: 100px;
+}
+.navBarSecound{
+    display: flex;
+    list-style-type: none;
+    /* margin-left: auto; */
+    background-color: rgb(255, 217, 0);
+    width: 30%;
+    padding-top: 15px;
+
+}
+.navBarSecound li a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 189, 0);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 40px;
+    margin-top: 20px;
+    padding: 10px 12px ;
+    border-radius: 5px;
+}
+
+/* popup form */
+
+.form-div{
+    width: 25%;
+    height: 400px;
+    background-color: rgb(255, 196, 0);
+    display: flex; 
+    margin-top: 0px;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    /* top: 50%; */
+    transition: 1s;
+    transform: translate(-50%,40%);
+    padding-top: 10px;
+    box-shadow: 0px 0px 10px 3px rgb(128, 128, 128);
+} 
+.forms{
+    width: 80%;
+  
+}
+.input-div{
+    padding-top: 40px;
+}
+.input-all{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: rgb(235, 233, 233);
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.input-all:focus{
+    border: 3px solid black;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+}
+.submits{
+    display: flex;
+    justify-content: center;
+}
+.submit1{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 189, 0);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    padding: 10px 12px ;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.submit1:hover{
+    background-color: rgb(1, 155, 1);
+}
+label{
+    font-size: 20px;
+    padding-top: 20px;
+    margin-top: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.input-all::placeholder{
+    padding-left: 10px;
+    font-weight: 600;
+}
+span{
+    position: absolute;
+    text-align: center;
+    right: 5px;
+    background-color: rgb(0, 189, 0);
+    padding: 5px 5px;
+    border-radius: 4px;
+    border: 2px solid black transparent;
+
+}
+span:hover{
+    background-color: red;
+    padding: 5px 5px;
+    border: 2px solid black;
+}
+
+.image-div{
+    position: absolute;
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+}
+.image-div img{
+    width: 100%;
+    background-size: cover;
+}
+/* Java Class */
+.Dispaly-Block{
+    display: none;
+}
+
+/* .Dispaly-Block{
+    display: block;
+} */
+.material-symbols-outlined{
+    cursor: pointer;
+}
+@media screen and (max-width:660px) {
+    .a100px{
+        margin-left: 0px;
+    }
+    .navBarFirst li a{
+        margin-left: 20px;
+
+    }
+    .navBarFirst{
+        width: 50%;
+    }
+    .navBarSecound{
+        width: 50%;
+    }
+
+}
+@media screen and (max-width:550px) {
+    .navBarFirst li a{
+        font-size:15px ;
+        
+    }
+}
+@media screen and (max-width:550px) {
+    .navBarSecound li a{
+        font-size: 15px;
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width:400px) {
+    .navBarFirst li a{
+        font-size:12px ;
+        
+    }
+}
+@media screen and (max-width:400px) {
+    .navBarSecound li a{
+        font-size: 10px;
+        margin-left: 20px;
+    }
+}
+/* form */
+@media screen and (max-width:950px){
+    .form-div{
+        width: 40%;
+    }
+}
+@media screen and (max-width:750px){
+    .form-div{
+        width: 50%;
+    }
+}
+@media screen and (max-width:750px){
+    .form-div{
+        width: 60%;
+    }
+}
+@media screen and (max-width:400px){
+    .form-div{
+        width: 80%;
+    }
+}
+
