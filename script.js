@@ -28,6 +28,7 @@ function submitp(){ /// Click or Submit
     
     AllData();
     emrty1();
+    login.style.display = "none";
     }
 }
 
