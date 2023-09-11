@@ -22,10 +22,8 @@ function submitp(event){ /// Click or Submit
     if(FullNameV.value === "" || EmailV.value === "" || PasswordV.value === ""){
         alert("Fill The Form");
         console.log("sjdfshdkf")
-        event.preventDefault()
     }
     else{
-    event.preventDefault()
     AllData();
     emrty1();
     login.style.display = "none";
